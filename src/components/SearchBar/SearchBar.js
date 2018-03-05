@@ -8,7 +8,7 @@ class SearchBar extends React.Component {
 this.state={
   term:'',
   locaton: '',
-  sorby: 'best_match'
+  sortBy: 'best_match'
 };
 
 this.handleTermChange = this.handleTermChange.bind(this);
@@ -28,7 +28,7 @@ this.sortByOptions = {
     if (this.state.sortBy === sortByOption) {
       return 'active';
     }
-      return ''
+      return '';
     }
 
   handleSortByChange(sortByOption){
